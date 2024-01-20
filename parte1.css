@@ -1,0 +1,49 @@
+.pregunta1{
+   background-color: lightblue; 
+    font-size: large;
+    color: black;
+}
+
+
+.remoto{
+  margin-left: 22px;
+  top: -14px;
+   
+}
+body{
+    background-image: url(./fondo.png);
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+   
+
+}
+.gitc{
+    margin-top: 15px;
+    margin-left: 12px;
+    width: 470px;
+    height: auto;
+}
+.all{
+    text-align: center;
+}
+.giti{
+    margin-top: 15px;
+    margin-left: 12px;
+    width: 470px;
+    height: auto;
+}
+
+.rename{
+    width: 470px;
+    height: auto;
+}
+.urlimg{
+    width:400px ;
+    height:auto;
+}
+
+.gitadd{
+    width: 470px;
+    height: auto;
+}
