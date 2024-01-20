@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parte 1</title>
+  <link rel="stylesheet" href="parte1.css">
+  <link rel="icon" href="uwu.jpg">
+</head>
+
+<body>
+  <div class="all">
+
+    <div class="preguntas">¿Qué son y que utilidad tienen las licencias?</div>
+
+    <p>Las licencias son una autorización que entrega un autor o una entidad a terceros para utilizar su producto,
+      sometido a propiedad intelectual y a derechos de autor.</p>
+    <p>Existen licencias de código abierto, como por ejemplo "GPLGNU (General public license ), Apache, MIT (también
+      conocida como x11), entre otros..." que permiten que el código fuente como los archivos binarios puedan ser
+      modificados y redistribuidos libremente sin tener que haber pagado al autor, Sin embargo, hay algunas licencias de
+      código abierto que incorcopran algunas restricciones, como el requisito de mantener el nombre de los autores y la
+      declaración de derechos de autor del código, o permitir la modificación del código sólo para usos personales o la
+      redistribución del software para usos no comerciales.
+    </p>
+    <div class="preguntas">¿Qué es el fichero .gitignore?</div>
+
+    <p>el fichero ".gitignore" es una herramienta que se usa en git para excluir/ignorar archivos y directorios del
+      control de versiones, ayuda a tener el repositorio organizado y limpio evitando archivos innecesarios </p>
+
+    <div class="preguntas">Explicar las dos formas de integrar el repositorio remoto en un repositorio local</div>
+
+    <p>Las dos formas de integerar un repositorio remoto en un repositorio local son las siguientes: <br>
+    <p>1. -> La primera forma que hay para integrar un repo remoto a un repo local es a traves del comando "git clone",
+      hay que tener en cuenta que lo que hace este comando es clonar completamente el repositorio remoto al repositorio
+      local y se hace de la siguiente manera: </p>
+
+    <div class="remoto">
+      1º. En tu ordenador, dar click drch. y seguidamente click izq. en "Git Bash Here" para asi abrir la consola.
+      2º. En la consola escribir " git clone ".<br>
+      3º. Ir al repositorio remoto y copiar el url de la barra de direcciones.<br>
+      4º. Volver a la consola y pegar el url y presionar la tecla "enter".<br>
+      5º. Ya deberias tener el repositorio remoto completo integrado en tu repositorio local.
+      <div><img class="gitc" src="capturas integrar repo remoto git clone/Captura.PNG" /> </div>
+    </div>
+
+    <p>2. -> la segunda forma de integrar un repo remoto a un repo local es a traves del comando "git init".<br>
+    Como recomendación lo que hay que hacer es crear una carpeta con el nombre de lo que quieres hacer, acto seguido abres la carpeta y sigues los siguientes pasos:   </p>
+    <div class="remoto">
+      <p> 1º. Abrir la consola como ya hemos hecho anteriormente en el primer paso </p>
+      <p> 2º. En la consola escribir " git init (este comando lo que hace es crear un repositorio local)" como curiosidad, nos crea una carpeta oculta llamada ".git". </p>
+      <div><img class="giti" src="./capturas integrar repo remoto git init/Captura oculto.PNG"/> </div>
+      <p> 3º. Crear una rama local con el comando " git checkout -b "nombre de la rama"(con este comando lo que hacemos es salirnos de la rama main si estamos en ella y nos mete en la rama la cual hemos especificado. Si no existe dicha rama, el comando la crea) " es recomendable copiar el nombre de la rama del repo remoto. </p>
+      <div><img class="remname" src="./capturas integrar repo remoto git init/name.png"/> </div>
+      <p>4º. Lo que debemos hacer ahora es conectar el repo remoto con el repo local. Para eso vamos al repo remoto y entramos a la rama en al cual queremos trabajar y le damos a "Code" y copiamos el URL </p>
+      <div><img class="urlimg" src="./capturas integrar repo remoto git init/URL.PNG"/></div>
+      <p>5º. una vez copiado el URL de la rama volvemos a 'gitBush' y escribimos el comando "git remote add origin " y pegamos el URL que hemos copiado. Cabe destacar que podemos cambiar origin por cualquier nombre que nosotros queramos pero es recomendable dejarlo en origin. </p>
+      <div> <img class="gitadd" src="./capturas integrar repo remoto git init/addorigin.PNG"/> </div>
+
+    </div>
+    </p>
+    <div class="preguntas">¿Como realizar un commit?</div>
+    <p> Para realizar un commit correctamente hay que tener en cuenta varios puntos:</p>
+    <p>1º-> La sintaxis de un commit es la siguiente: git commit -m "nombre del commit". </p>
+    <p>2º-> Al escribir el mensaje de commit es recomendable usar un verbo imperativo (add,fix,change,remove). </p>
+    <p>3º-> No se debe usar punto final ni puntos suspensivos en los mensajes. </p>
+    <p>4º-> Usar como máximo 50 carácteres para los mensajes de commit. </p>
+    <p>5º-> Añadir el contexto que sea necesario en el cuerpo del mensaje del commit.</p>
+    <p>6º-> Usar prefijos en los commits para hacerlos más semánticos.</p>
+    <p>7º-> Considerar usar utilidades para hacer commit.</p>
+  </div>
+
+</body>
+
+</html>
