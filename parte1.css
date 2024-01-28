@@ -1,178 +1,177 @@
-.pregunta1{
-   background-color: lightblue; 
-    font-size: large;
-    color: black;
-}
-
-
 .remoto{
-  margin-left: 22px;
-  top: -14px;
-   
-}
-body{
-    background-image: url(./fondo.png);
-    background-position: center;
-    color: white;
-    background-attachment: fixed;
-    text-align: center;
-
-<<<<<<< HEAD
-}*/
-.gitc{ /*imagenes Nico*/
-=======
-}
-.gitc{
->>>>>>> 566dbc6836c686a0340da9ed24adc9e01f3abdd8
-    margin-top: 15px;
-    margin-left: 12px;
-    width: 470px;
+    margin-left: 22px;
+    top: -14px;
+     
+  }
+  body{
+      background-image: url(./fondo.jpg);
+      background-position: center;
+      color: white;
+      background-attachment: fixed;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 40%;
+      margin: auto;
+  
+  }
+  
+  
+  /*Tengo que volver a editar las fotos por que se ven fatal
+  Daylto :)
+  */
+  .local{
+      margin-top: 15px;
+      margin-left: 12px;
+      width:500px ;
+      height:auto;
+  }
+  .remoto{
+      margin-top: 15px;
+      margin-left: 12px;
+      width:500px ;
+      height:auto;
+  }
+  .RepositorioRemoto{
+      width:400px ;
+      height:auto;
+  }
+  .IntentoCommit{
+      width:500px ;
+      height:auto;
+  }
+  .main{
+      width:500px ;
+      height:auto;
+  }
+  .branch{
+      width:500px ;
+      height:auto;
+  }
+  .merge{
+      width:500px ;
+      height:auto;
+  }
+  .log{
+      width:500px ;
+      height:auto;
+  }
+  div{
+      
+  }
+  /*Es hasta aqui*/
+  /*----------------*/
+  /*Nico imagenes 26/01/2024. 01.12AM*/
+  .ejemplo{
+      width: 470px;
+      height: auto;
+  }
+  .ejemploP{
+      width: 470px;
+      height: auto;
+  }
+  .gitssh{
+      width: 470px;
+      height: auto;
+      
+  }
+  .pull{
+      width: 470px;
+      height: auto;
+  }
+  .gitc{ /*imagenes Nico*/
+      width: 470px;
+      height: auto;
+  }
+  
+  .giti{ /*imagenes Nico*/
+      margin-top: 15px;
+      margin-left: 12px;
+      width: 470px;
+      height: auto;
+  }
+  
+  .rename{ /*imagenes Nico*/
+      width: 470px;
+      height: auto;
+  }
+  .urlimg{ /*imagenes Nico*/
+      width:400px ;
+      height:auto;
+  }
+  
+  .gitadd{ /*imagenes Nico*/
+      width: 470px;
+      height: auto;
+  }
+  /*Fin imagenes Nico nuevas */
+  /*capturas gitKraken*/
+  .gKr1{
+      width: 470px;
+      height: auto;
+  }
+  .gKr2{
+      width: 400px;
+      height: auto;
+  }
+  .gKr3{
+      width: 470px;
+      height: auto;
+  }
+  .Gramas1{
+      width: 470px;
+      height: auto;
+  }
+  .Gramas2{
+      width: 470px;
+      height: auto;
+  }
+  .Gramas3{
+      width: 470px;
+      height: auto;
+  }
+  .mergeC1{
+      width: 800px;
+      height: auto;
+  }
+  .mergeC2{
+      width: 850px;
+      height: auto;
+  }
+  .mergeC3{
+      width:800px;
+      height: auto;
+  }
+  .mergeres{
+      width: 550px;
+      height: auto;
+  }
+  .mergeI{
+      width: 800px;
+      height: auto;
+  }
+  .mergeE{
+      width: 800px;
+      height: auto;
+  }
+  .mergeRs{
+      width: 470px;
+      height: auto;
+  }
+  .mergeRs2{
+      width: 470px;
+      height: auto;
+  }
+  .curioso{
+      width: 470px;
+      height: auto;
+  }
+  /*capturas gitKraken*/
+  .ramasdistintas{
+      width: 400px;
+      height: auto;
+  }
+  .IntentoCommit{
+    width: 470;
     height: auto;
-}
-.all{ /*imagenes Nico*/
-    text-align: center;
-}
-.giti{ /*imagenes Nico*/
-    margin-top: 15px;
-    margin-left: 12px;
-    width: 470px;
-    height: auto;
-}
-
-.rename{ /*imagenes Nico*/
-    width: 470px;
-    height: auto;
-}
-.urlimg{ /*imagenes Nico*/
-    width:400px ;
-    height:auto;
-}
-
-.gitadd{ /*imagenes Nico*/
-    width: 470px;
-    height: auto;
-}
-/*Tengo que volver a editar las fotos por que se ven fatal
-Daylto :)
-*/
-.local{
-    margin-top: 15px;
-    margin-left: 12px;
-    width:500px ;
-    height:auto;
-}
-.remoto{
-    margin-top: 15px;
-    margin-left: 12px;
-    width:500px ;
-    height:auto;
-}
-.RepositorioRemoto{
-    width:400px ;
-    height:auto;
-}
-.IntentoCommit{
-    width:500px ;
-    height:auto;
-}
-.main{
-    width:500px ;
-    height:auto;
-}
-.branch{
-    width:500px ;
-    height:auto;
-}
-.merge{
-    width:500px ;
-    height:auto;
-}
-.log{
-    width:500px ;
-    height:auto;
-}
-div{
-    
-}
-/*Es hasta aqui*/
-/*----------------*/
-/*Nico imagenes nuevas 26/01/2024. 01.12AM*/
-.ejemplo{
-    width: 470px;
-    height: auto;
-}
-.ejemploP{
-    width: 470px;
-    height: auto;
-}
-.gitssh{
-    width: 470px;
-    height: auto;
-    
-}
-.pull{
-    width: 470px;
-    height: auto;
-}
-/*Fin imagenes Nico nuevas */
-/*capturas gitKraken*/
-.gKr1{
-    width: 470px;
-    height: auto;
-}
-.gKr2{
-    width: 400px;
-    height: auto;
-}
-.gKr3{
-    width: 470px;
-    height: auto;
-}
-.Gramas1{
-    width: 470px;
-    height: auto;
-}
-.Gramas2{
-    width: 470px;
-    height: auto;
-}
-.Gramas3{
-    width: 470px;
-    height: auto;
-}
-.mergeC1{
-    width: 850px;
-    height: auto;
-}
-.mergeC2{
-    width: 850px;
-    height: auto;
-}
-.mergeC3{
-    width:850px;
-    height: auto;
-}
-.mergeres{
-    width: 550px;
-    height: auto;
-}
-.mergeI{
-    width: 850px;
-    height: auto;
-}
-.mergeE{
-    width: 1200px;
-    height: auto;
-}
-.mergeRs{
-    width: 470px;
-    height: auto;
-}
-.mergeRs2{
-    width: 470px;
-    height: auto;
-}
-.curioso{
-    width: 470px;
-    height: auto;
-}
+  }
