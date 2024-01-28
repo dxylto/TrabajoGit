@@ -10,15 +10,20 @@
   top: -14px;
    
 }
-/*body{
+body{
     background-image: url(./fondo.png);
     background-position: center;
     color: white;
     background-attachment: fixed;
-   
+    text-align: center;
 
+<<<<<<< HEAD
 }*/
 .gitc{ /*imagenes Nico*/
+=======
+}
+.gitc{
+>>>>>>> 566dbc6836c686a0340da9ed24adc9e01f3abdd8
     margin-top: 15px;
     margin-left: 12px;
     width: 470px;
@@ -51,16 +56,43 @@
 Daylto :)
 */
 .local{
+    margin-top: 15px;
+    margin-left: 12px;
     width:500px ;
     height:auto;
 }
 .remoto{
+    margin-top: 15px;
+    margin-left: 12px;
     width:500px ;
     height:auto;
 }
 .RepositorioRemoto{
     width:400px ;
     height:auto;
+}
+.IntentoCommit{
+    width:500px ;
+    height:auto;
+}
+.main{
+    width:500px ;
+    height:auto;
+}
+.branch{
+    width:500px ;
+    height:auto;
+}
+.merge{
+    width:500px ;
+    height:auto;
+}
+.log{
+    width:500px ;
+    height:auto;
+}
+div{
+    
 }
 /*Es hasta aqui*/
 /*----------------*/
@@ -83,5 +115,64 @@ Daylto :)
     height: auto;
 }
 /*Fin imagenes Nico nuevas */
-
-
+/*capturas gitKraken*/
+.gKr1{
+    width: 470px;
+    height: auto;
+}
+.gKr2{
+    width: 400px;
+    height: auto;
+}
+.gKr3{
+    width: 470px;
+    height: auto;
+}
+.Gramas1{
+    width: 470px;
+    height: auto;
+}
+.Gramas2{
+    width: 470px;
+    height: auto;
+}
+.Gramas3{
+    width: 470px;
+    height: auto;
+}
+.mergeC1{
+    width: 850px;
+    height: auto;
+}
+.mergeC2{
+    width: 850px;
+    height: auto;
+}
+.mergeC3{
+    width:850px;
+    height: auto;
+}
+.mergeres{
+    width: 550px;
+    height: auto;
+}
+.mergeI{
+    width: 850px;
+    height: auto;
+}
+.mergeE{
+    width: 1200px;
+    height: auto;
+}
+.mergeRs{
+    width: 470px;
+    height: auto;
+}
+.mergeRs2{
+    width: 470px;
+    height: auto;
+}
+.curioso{
+    width: 470px;
+    height: auto;
+}
