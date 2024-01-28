@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parte 1</title>
- <link rel="stylesheet" href="parte1.css">
+  <link rel="stylesheet" href="parte1.css">
   <link rel="icon" href="uwu.jpg">
 </head>
 
@@ -15,18 +15,20 @@
     <div class="preguntas">¿Cómo podemos crear un repositorio remoto?</div>
     <div class="parte1">
       FORMA 1.
-      <p>Primero deberemos tener un repositorio local, para más tarde añadir la 	dirección del repositorio remoto.</p><br>
+      <p>Primero deberemos tener un repositorio local, para más tarde añadir la dirección del repositorio remoto.</p>
+      <br>
       1.Creación de un repositorio local:
-      <p>- git init “nombre”</p><br>
-      <p>-nos meteremos dentro del repositorio y crearemos el archivo que 
-          veamos necesario </p>
+      <p>- git init “nombre”</p>
+      <p>-nos meteremos dentro del repositorio y crearemos el archivo que
+        veamos necesario </p>
       <p>-Escribiremos git status</p>
       <p>-git add (Para añadir los archivos correspondientes)</p>
       <p>* si escribimos ’.’ nos añadirá todo lo que este desactualizado</p>
       <p>-git commit -m “Nombre que deseemos”</p>
-      <p>*si no te ha dejado hacer un commit es porque es la primera vez que lo haces te saldran unas instrucciones para que añadas tu correo y tu nombre, una vez lo haga ya podrá hacer un git commit</p>
+      <p>*si no te ha dejado hacer un commit es porque es la primera vez que lo haces te saldran unas instrucciones para
+        que añadas tu correo y tu nombre, una vez lo haga ya podrá hacer un git commit</p>
       <div><img class="local" src="./repositorio_local.jpeg"></div>
-      
+
       2.Creación de un repositorio remoto:
       <p>Deberemos crear el repositorio en alguna página como github</p>
       <p>*Las imágenes y la explicación sera desde github</p>
@@ -35,28 +37,35 @@
       <p>-git remote add orgin "url"</p>
       <p>-git push -u</p>
       <div><img class="remoto" src="./remoto.jpeg"></div>
-  </div>
-  <div class="parte2">    
+    </div>
+    <div class="parte2">
       FORMA 2.
       <p>Esta vez lo primero que vamos a realizar va a ser la el repositorio remoto</p>
-      <p>Para ello deberemos de dirigirnos a github y seguir los mismo pasos de <br>creación de un repositorio remoto explicados anteriormente:</p>
+      <p>Para ello deberemos de dirigirnos a github y seguir los mismo pasos de <br>creación de un repositorio remoto
+        explicados anteriormente:</p>
       <p>-Cuando hayamos acabado de crearlo copiaremos la url</p>
       <p>-Abriremos la terminal e iremos a donde queremos que esté nuestro repositorio</p>
       <p>-Escribiremos git clone "url"</p>
-  </div>
-  <div class="preguntas">¿Qué es el README.md?</div>
-  <p>Los archivos readme.md son archivos con información importante del proyecto,<br> suelen aclarar preguntas sobre la instalación, actualización o utilización de un software que le sirve al usuario final</p>
-  <br>
-  <p>También sirve de guía para la ejecución del proyecto o por si un proyecto se queda en pausa a la hora de retomarlo sirve de guía</p><br>
-  <p>Para otros desarrolladores explican el código y proporcionan información importante sobre su desarrollo posterior o sobre cómo utilizar un sistema, un software o proyectos de código abierto</p>
+    </div>
+    <div class="preguntas">¿Qué es el README.md?</div>
+    <p>Los archivos readme.md son archivos con información importante del proyecto,<br> suelen aclarar preguntas sobre
+      la instalación, actualización o utilización de un software que le sirve al usuario final</p>
+    <br>
+    <p>También sirve de guía para la ejecución del proyecto o por si un proyecto se queda en pausa a la hora de
+      retomarlo sirve de guía</p><br>
+    <p>Para otros desarrolladores explican el código y proporcionan información importante sobre su desarrollo posterior
+      o sobre cómo utilizar un sistema, un software o proyectos de código abierto</p>
 
-  <div class="preguntas">¿Qué es Markdown?</div>
-  <p>Es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz, <br>que la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida
-  </p>
+    <div class="preguntas">¿Qué es Markdown?</div>
+    <p>Es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz, <br>que la máxima legibilidad y facilidad
+      de publicación tanto en su forma de entrada como de salida
+    </p>
 
-     <!-- Inicio parte de Nico final -->
+    <!-- Inicio parte de Nico final -->
 
-  <div class="preguntas">¿Qué son y que utilidad tienen las licencias?</div>
+    <div class="preguntas">
+      <h2>¿Qué son y que utilidad tienen las licencias?</h2>
+    </div>
 
     <p>Las licencias son una autorización que entrega un autor o una entidad a terceros para utilizar su producto,
       sometido a propiedad intelectual y a derechos de autor.</p>
@@ -67,9 +76,11 @@
       declaración de derechos de autor del código, o permitir la modificación del código sólo para usos personales o la
       redistribución del software para usos no comerciales.
     </p>
-    <div class="preguntas">¿Qué es el fichero .gitignore?</div>
+    <div class="preguntas">
+      <h2>¿Qué es el fichero .gitignore?</h2>
+    </div>
 
-    <p>el fichero ".gitignore" es una herramienta que se usa en git para excluir/ignorar archivos y directorios del
+    <p>El fichero ".gitignore" es una herramienta que se usa en git para excluir/ignorar archivos y directorios del
       control de versiones, ayuda a tener el repositorio organizado y limpio evitando archivos innecesarios.</p>
 
     <p>El archivo ".gitignore" se coloca generalmente en el directorio raíz o "main" de un proyecto. Otra manera de
@@ -79,9 +90,9 @@
       ".gitignore"(es obligatorio incluir el . al inicio) Despúes, editamos el archivo según sea necesario. Cada nueva
       línea debe incluir un archivo o carpeta adicional que queramos que Git ignore. </p>
     <p> Las entradas del archivo pueden seguir un patrón coincidente: </p>
-    <p>"*" se utiliza como una coincidencia comodín.</p>
-    <p>"/" es para ignorar las carpetas y/o las rutas relativas al archivo .gitignore.</p>
-    <p>"#" lo usamos para agregar comentarios.</p>
+    <p>"*" Se utiliza como una coincidencia comodín.</p>
+    <p>"/" Es para ignorar las carpetas y/o las rutas relativas al archivo .gitignore.</p>
+    <p>"#" Lo usamos para agregar comentarios.</p>
     <p>resumen gráfico de las entradas de un archivo .gitignore:</p>
     <div> <img class="ejemplo" src="./como_ignorar.PNG" /></div>
     <p>Y un ejemplo gráfico: </p>
@@ -94,7 +105,7 @@
       ".gitignoreglobal". </p>
     <h3>¿Cómo podemos evitar el rastreo de archivos a los que previamente les hemos hecho un "commit" desde el nuevo
       gitignore?</h3>
-    <p>si queremos evitar el rastreo de un archivo, es decir, detener el rastreo del archivo, pero no borrarlo del
+    <p>Si queremos evitar el rastreo de un archivo, es decir, detener el rastreo del archivo, pero no borrarlo del
       sistema, hemos de utilizar el comando "git rm --cached nombre-del-archivo" para evitar el rastreo de todos los
       archivos en ".gitignore".</p>
     <p>Primero hacemos "commit" de cualquier cambio de código pendiente, y luego ejecutamos " git rm -r --cached", Asi
@@ -105,14 +116,16 @@
 
 
 
-    <div class="preguntas">Explicar las dos formas de integrar el repositorio remoto en un repositorio local.</div>
+    <div class="preguntas">
+      <h2>Explicar las dos formas de integrar el repositorio remoto en un repositorio local.</h2>
+    </div>
 
     <p>Las dos formas de integerar un repositorio remoto en un repositorio local son las siguientes: <br>
     <p>1. -> La primera forma que hay para integrar un repo remoto a un repo local es a traves del comando "git clone",
       hay que tener en cuenta que lo que hace este comando es clonar completamente el repositorio remoto al repositorio
       local y se hace de la siguiente manera: </p>
 
-    <div class="remoto">
+    <div>
       1º. En tu ordenador, dar click drch. y seguidamente click izq. en "Git Bash Here" para asi abrir la consola.
       2º. En la consola escribir " git clone ".<br>
       3º. Ir al repositorio remoto y copiar el url de la barra de direcciones.<br>
@@ -121,48 +134,162 @@
       <div><img class="gitc" src="Captura.PNG" /> </div>
     </div>
 
-    <p>2. -> la segunda forma de integrar un repo remoto a un repo local es a traves del comando "git init".<br>
+    <p>2. -> La segunda forma de integrar un repo remoto a un repo local es a traves del comando "git init".<br>
       Como recomendación lo que hay que hacer es crear una carpeta con el nombre de lo que quieres hacer, acto seguido
       abres la carpeta y sigues los siguientes pasos: </p>
-    <div class="remoto">
-      <p> 1º. Abrir la consola como ya hemos hecho anteriormente en el primer paso </p>
-      <p> 2º. En la consola escribir " git init (este comando lo que hace es crear un repositorio local)" como
-        curiosidad, nos crea una carpeta oculta llamada ".git". </p>
-      <div><img class="giti" src="./Captura oculto.PNG" /> </div>
-      <p> 3º. Crear una rama local con el comando " git checkout -b "nombre de la rama"(con este comando lo que hacemos
-        es salirnos de la rama main si estamos en ella y nos mete en la rama la cual hemos especificado. Si no existe
-        dicha rama, el comando la crea) " es recomendable copiar el nombre de la rama del repo remoto. </p>
-      <div><img class="remname" src="./name.png" /> </div>
-      <p>4º. Lo que debemos hacer ahora es conectar el repo remoto con el repo local. Para eso vamos al repo remoto y
-        entramos a la rama en al cual queremos trabajar y le damos a "Code" y copiamos el URL y/o el ssh key. </p>
-      <div><img class="urlimg" src="./URL.PNG" /></div>
-      <p>5º. una vez copiado el URL de la rama volvemos a 'gitBush' y escribimos el comando "git remote add origin " y
-        pegamos el URL que hemos copiado. Cabe destacar que podemos cambiar origin por cualquier nombre que nosotros
-        queramos pero es recomendable dejarlo en origin. </p>
-      <div> <img class="gitadd" src="./addorigin.PNG" /> </div>
-      <p>6º. Si queremos validar que tenemos conexión y acceso al repositorio lo hacemos con el comando "git remote show
-        origin(o el nombre el cual pusimos en vez de origin)" y presionamos "enter". </p>
-      <div><img class="gitssh" src="./ssh.PNG" /> </div>
-      <p>7º. Cuando ya hemos verificado que tenemos acceso al repo remoto, escribimos el comando "git pull origin(o el
-        nombre el cual pusimos en vez de origin)" y acto seguido escribimos el nombre de la rama para especificar la
-        rama que queremos integrar en nuestro repo local. </p>
-      <div><img class="pull" src="./repo_conectado.PNG"></div>
-      <p>Listo, ya deberiamos tener la rama especificada en nuestro repo local.</p>
+    <div <!-class="remoto" -->></div>
+    <p> 1º. Abrir la consola como ya hemos hecho anteriormente en el primer paso </p>
+    <p> 2º. En la consola escribir " git init (este comando lo que hace es crear un repositorio local)" como
+      curiosidad, nos crea una carpeta oculta llamada ".git". </p>
+    <div><img class="giti" src="./Captura oculto.PNG" /> </div>
+    <p> 3º. Crear una rama local con el comando " git checkout -b "nombre de la rama"(con este comando lo que hacemos
+      es salirnos de la rama main si estamos en ella y nos mete en la rama la cual hemos especificado. Si no existe
+      dicha rama, el comando la crea) " es recomendable copiar el nombre de la rama del repo remoto. </p>
+    <div><img class="remname" src="./name.png" /> </div>
+    <p>4º. Lo que debemos hacer ahora es conectar el repo remoto con el repo local. Para eso vamos al repo remoto y
+      entramos a la rama en al cual queremos trabajar y le damos a "Code" y copiamos el URL y/o el ssh key. </p>
+    <div><img class="urlimg" src="./URL.PNG" /></div>
+    <p>5º. Una vez copiado el URL de la rama volvemos a 'gitBush' y escribimos el comando "git remote add origin " y
+      pegamos el URL que hemos copiado. Cabe destacar que podemos cambiar origin por cualquier nombre que nosotros
+      queramos pero es recomendable dejarlo en origin. </p>
+    <div> <img class="gitadd" src="./addorigin.PNG" /> </div>
+    <p>6º. Si queremos validar que tenemos conexión y acceso al repositorio lo hacemos con el comando "git remote show
+      origin(o el nombre el cual pusimos en vez de origin)" y presionamos "enter". </p>
+    <div><img class="gitssh" src="./ssh.PNG" /> </div>
+    <p>7º. Cuando ya hemos verificado que tenemos acceso al repo remoto, escribimos el comando "git pull origin(o el
+      nombre el cual pusimos en vez de origin)" y acto seguido escribimos el nombre de la rama para especificar la
+      rama que queremos integrar en nuestro repo local. </p>
+    <div><img class="pull" src="./repo_conectado.PNG"></div>
+    <p>Listo, ya deberiamos tener la rama especificada en nuestro repo local.</p>
 
 
+
+    <div class="preguntas">
+      <h2>¿Como realizar un commit?</h2>
+
+      <p> Para realizar un commit correctamente hay que tener en cuenta varios puntos:</p>
+      <p>1º-> La sintaxis de un commit es la siguiente: git commit -m "nombre del commit". </p>
+      <p>2º-> Al escribir el mensaje de commit es recomendable usar un verbo imperativo (add,fix,change,remove). </p>
+      <p>3º-> No se debe usar punto final ni puntos suspensivos en los mensajes. </p>
+      <p>4º-> Usar como máximo 50 carácteres para los mensajes de commit. </p>
+      <p>5º-> Añadir el contexto que sea necesario en el cuerpo del mensaje del commit.</p>
+      <p>6º-> Usar prefijos en los commits para hacerlos más semánticos.</p>
+      <p>7º-> Considerar usar utilidades para hacer commit.</p>
     </div>
+    <!-- fin de parte de Nico final -->
+    <!--gitKraken hecho por Nico-->
+    <div class="preguntas">
+      <h2>Gestión de ramas y resolución de conflictos desde un interfaz gráfica como gitkraken.</h2>
+    </div>
+
+    <p>Antes de empezar, debemos saber que es y como usar gitKraken.</p>
+
+    <p>gitKraken es un cliente de git multiplataforma en la cual, podemos visualizar nuestro historial de repositorios
+      git con un gráfico de
+      confirmación interactivo. </p>
+
+    <p> Si surge un conflicto de merge(fusión), existe una herramienta de fusión que está para simplificar el proceso y
+      acelerar la resolución de dicho problema. </p>
+
+    <p>Tiene espacios de trabajo dinámicos, en los cuales podemos agrupar repositorios fácilmente, ver el estado y
+      realizar acciones en múltiples repositorios, agilizando de esta manera nuestro flujo de trabajo.</p>
+
+    <h3>Gestión de ramas en gitKraken.</h3>
+
+    <p>Para gestionar ramas en gitKraken es bastante sencillo, yo he encontrado maneras de hacerlo.</p>
+
+    <p>Para crear una rama nueva en nuestro repositorio simplemente debemos ir a la parte izquierda de la interfaz y
+      situar el cursos sobre cualquier rama ya creada, en ese momento deberán salir tres puntos y hacemos click
+      izquierdo en ellos.</p>
+    <img class="gKr1" src="./caputras gitKraken/gKrakenRamas/creacion_rama_gK1.png" />
+    <p>también podemos hacer click derecho en la rama y nos saldran varias opciones de las cuales
+      deberemos elegir "create branch here". </p>
+    <img class="gKr2" src="./caputras gitKraken/gKrakenRamas/creacion_rama_gK2.png" />
+
+    <p>Otra manera de crear una rama nueva es fijarnos en la interfaz de arriba y hacer doble click en "Branch". Al
+      hacer click nos pedira nombrar la rama y se creará una rama nueva automáticamente la cuál nos aparecerá en la
+      interfaz de la izquierda o arriba en "branch" junto con el nombre de la rama. </p>
+    <img class="gKr3" src="./caputras gitKraken/gKrakenRamas/creacion_rama_gK3.png" />
+
+    <p> Si lo que queremos es movernos entre ramas es muy sencillo, podemos simplemente poner el cursor
+      sobre la rama a la cual nos queremos mover y hacer doble click.</p>
+    <img class="Gramas1" src="./caputras gitKraken/gKrakenRamas/G_ramas1.png" />
+
+    <p> Otra manera es en la interfaz de la izquierda, nos saldrá en color verde la rama en la que nos encontramos (en
+      este ejemplo nos encontrmaos en la main) y si queremos movernos a otra rama hacemos lo mismo que en el ejemplo
+      anterior, situamos el cursos sobre la rama a la cual nos queremos mover, hacemos doble click y listo. </p>
+    <img class="Gramas2" src="./caputras gitKraken/gKrakenRamas/G_ramas2.png" />
+
+    <p>Por último, otra manera de cambiarnos de rama es abriendo la interfaz de arriba llamada "branch" de la cual hemos
+      hablado anteriormente. En la cual aparecera por defecto la rama en la que nos encontramos actualmente. Si hacemos
+      click sobre ella apareceran las otras ramas de nuestro repositorio y si queremos cambiarnos de rama debemos
+      simplemente hacer click sobre el nombre de la rama a la cual nos queremos mover.</p>
+    <img class="Gramas3" src="./caputras gitKraken/gKrakenRamas/G_ramas3.png" />
+
+    <h3> Resolución de conflictos desde una interfaz grafica con gitKraken</h3>
+    <p>Para resolver conflictos de merge (fusión) desde gitKraken es bastante sencillo desde mi punto de vista, ya que
+      como hemos dicho antes, existe una herramienta de fusión que está para simplificar el proceso y
+      acelerar la resolución de dicho problema. </p>
+
+    <p>Lo primero es saber que cuando ocurre un conflicto con merge, nos sale en la pantalla 3 cosas.</p>
+    <p>
+    <h3>1º- Abajo a la izquierda nos salen unos recuadros en rojo diciendonos el cual uno de ellos nos dice "git pull
+      failed main error: failed to push some refs to github.com:KolBz/gitKraken.git".</h3>
     </p>
-    <div class="preguntas">¿Como realizar un commit?</div>
-    <p> Para realizar un commit correctamente hay que tener en cuenta varios puntos:</p>
-    <p>1º-> La sintaxis de un commit es la siguiente: git commit -m "nombre del commit". </p>
-    <p>2º-> Al escribir el mensaje de commit es recomendable usar un verbo imperativo (add,fix,change,remove). </p>
-    <p>3º-> No se debe usar punto final ni puntos suspensivos en los mensajes. </p>
-    <p>4º-> Usar como máximo 50 carácteres para los mensajes de commit. </p>
-    <p>5º-> Añadir el contexto que sea necesario en el cuerpo del mensaje del commit.</p>
-    <p>6º-> Usar prefijos en los commits para hacerlos más semánticos.</p>
-    <p>7º-> Considerar usar utilidades para hacer commit.</p>
+    <img class="mergeC1" src="./caputras gitKraken/git_merge_error/ERROR MERGE GENERAL ROJO.png" />
+    <p>
+    <h3>2º.- Arriba nos sale una barrita que nos dice "A file conflict was found when attempting to merge into main."
+    </h3>
+    </p>
+    <img class="mergeC2" src="./caputras gitKraken/git_merge_error/ERROR MERGE GENERAL ARRIBA.png" />
+    <p>
+    <h3>3º.- A la derecha nos sale una interfaz que nos dice "Merge conflicts detected", tambien vemos otro botón de
+      color anaranjado que dice "Mark all resolved" que básicamente significa que los conflictos están resueltos. Y
+      abajo de esa interfaz nos salen dos botones, uno verde que dice "No changes to merge" y otro en rojo que dice
+      "Abort merge".</h3>
+    </p>
+    <img class="mergeC3" src="./caputras gitKraken/git_merge_error/ERROR MERGE GENERAL DRCH.png" />
+    <p>Para ver donde se encuentra el conflicto debemos darle click en la interfaz de la derecha al archivo en concreto
+      que da error. en este caso el archivo "conflicto".html.</p>
+    <img class="mergeres" src="./caputras gitKraken/git_merge_error/RESOLVED.png" />
+    <p>Al darle Click nos saldrá el editor con el conflicto que hay.</p>
+    <p>En el lado izquierdo podemos ver el archivo que queremos subir al repo remoto, y en el lado derecho el archivo
+      que estaba guardado en el repo remoto.</p>
+    <img class="mergeI" src="./caputras gitKraken/git_merge_error/SCREEN ERROR.png" />
+    <p>Bien, una vez situados, comenzamos a arreglar el conflicto. En este caso lo que le voy a decir al editor es que
+      me escoja toda la parte de la derecha excepto las dos últimas lineas (10 y 11) para poder agregar la linea 9 de la
+      parte izquierda. Para hacer eso tenemos que hacer click al recuadro blanco de la parte derecha y nos aparecerá
+      todo abajo en el Output (todo este
+      proceso está en el recuadro verde) después, ponemos el cursor sobre las lineas que queremos borrar que son la 10 y
+      la 11 y nos saldrá un
+      circulo rojo con un mensaje diciendo <b>"Don't take this line"</b> que lo que hace es eliminar esas lineas del
+      output. Una vez eliminadas, vamos a la parte izquierda y escojemos solo la linea 9 poniendo por encima el
+      cursor sobre dicha linea (deberá salir un circulo verde con un simnbolo
+      "+") (todo esto aparece dentro del recuadro rojo). Finalmente agregamos de vuelta las lineas 10 y 11 que hemos
+      quitado antes y vemos que en el "Output"( recuadro morado) aparece todo lo que hemos hecho. </p>
+    <p>De esta manera conseguimos que no haya ningún conflicto, ya que las lineas de código que antes se contradecian
+      entre si ya no lo hacen.</p>
+    <img class="mergeE" src="./caputras gitKraken/git_merge_error/SCREEN ERROR 2.png" />
+    <p>Listo, guardamos los cambios y al salir le damos al botón verde de abajo que dice "No change to merge" y nos
+      saldrá el siguiente mensaje </p>
+    <img class="mergeRs" src="./caputras gitKraken/git_merge_error/merge resuelto 1.png" />
+    <p> Después, hacer le damos a pull en la interfaz de arriba y nos saldrá este mensaje</p>
+    <img class="mergeRs2" src="./caputras gitKraken/git_merge_error/merge resuleto 2.png" />
+    <p>Listo, ya hemos solucionado un conflicto de merge en gitKraken</p>
+
+    <h3>Algo curioso que me ha parecido en gitKraken es que al crear un repositorio local, te da varias opciones,
+      algunas de ellas son : </h3>
+    <p>.gitignore Template</p>
+    <p>escoger la licencia</p>
+    <p> e inicializar el repositorio con LFS</p>
+    <p> está ultima, es la que mas me ha llamado la atención, y al ponerme a investigar descubrí en la propia web de
+      gitKraken que LFS es una extensión que permite a los usuarios ahorrar espacio almacenando archivos binarios en una
+      ubicación diferente.</p>
+    <img class="curioso" src="./caputras gitKraken/curiosidad.png" />
+
   </div>
-   <!-- fin de parte de Nico final -->
-    
+
+  </div>
 </body>
+
 </html>
