@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parte1.css" />
+    <link rel="icon" href="./img/picotre.jpg" type="image/x-icon" />
+    <title>Parte2</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="preguntas">Creación de ramas. Recuerda que en la rama master/main sólo debería existir la versión acabada del producto.</div>
+        <p>No podemos crear una nueva rama partida de la main sin tener ningún commit, 
+            <br>aun así vamos a intentarlo para ver que pasa, vamos a crear un archivo readme.md pero no vamos a 
+            <br>hacer no vamos a comitearlo y vamos a intentar hacer una rama para ver que nos sale</p>
+            <div class="IntentoCommit"><img src="./img/Cap_intento_commit.png"></div>
+            <p>Como vemos nos sale que no es valido y cuando hacemos un branch para ver las ramas que tenemos nos sale vacío 
+                <br>esto es debido a que la rama main se crea después de hacer el primer commit</p>
+            <div class="main"><img src="./img/main1.png"></div>
+            <p>Aquí podemos ver que ahora si esta la rama main</p><br>
+            <p>Ahora crearemos una nueva rama para trabajar en ella</p>
+            <p>-git branch "nombre"</p>
+            <div class="branch"><img src="./img/branch_prueba.png"></div>
+            <p>Crearemos una segunda y añadiremos archivos</p>
+            <div class="branch"><img src="./img/branch2.png"></div>
+
+        <div class="preguntas">Proceso de merge entre ramas</div>
+        <p>Uniremos la rama dev a la rama main</p>
+        <p>Antes usaremos el git checkout para ir a la rama main</p>
+        <p>Ahora escribiremos git merge y el nombre de la rama que queremos traer</p>
+        <div class="merge"><img src="./img/Despuess_merge.png"></div>
+        <p>Si hacemos un git log podremos ver que comparten los commits</p>
+        <div class="log"><img src="./img/logDespues_merge.png"></div>    
+        <p>Listo, ya tenemos actualizada la rama main</p>
+        <p>Es igual para mergear cualquier otra rama, <br>
+            en la rama main no debemos trabajar </p>   
+        <div class="preguntas">
+            <h1>¿Cada cuánto hay que realizar un commit?</h1>
+        </div>
+        <p>Primero debemos saber, que hay que hacer y para que hacer un commit</p>
+        <!--Explicacion de commit antes de responder pregunta-->
+        <ul>
+            <li>
+                <strong>Etapa de Stage:</strong>
+                <p>Tus cambios deben estar en la etapa de "Stage" antes de realizar un commit.</p>
+            </li>
+            <li>
+                <strong>Mensaje Descriptivo:</strong>
+                <p>Cada commit debe tener un mensaje descriptivo que explique brevemente los cambios realizados.</p>
+            </li>
+            <li>
+                <strong>Añadir Valor:</strong>
+                <p>Hacer un commit debe representar la adición de valor al proyecto. Asegúrate de que los cambios sean
+                    significativos y bien documentados.</p>
+            </li>
+        </ul>
+        <h2>Cuando hay que hacerlo</h2>
+<!--Como debemos o con que frencuencia debemos hacer commits explicacion-->
+        <p><strong>Realizar cambios pequeños y lógicos en los commits:</strong>
+            Asegúrate de hacer commits con modificaciones de tamaño reducido y coherentes para facilitar el seguimiento,
+            identificar problemas y mantener un historial claro.</p>
+
+        <p><strong>Hacer commits cambios específicos:</strong> Es importante que cada commit aborde una única funcionalidad,
+            corrección de error o mejora, representando así una unidad indivisible y completa de cambio.</p>
+
+        <p><strong>Mantener una frecuencia regular en los commits:</strong> Realiza commits con regularidad para
+            mantener un historial claro y facilitar la colaboración en equipos.</p>
+
+        <p><strong>Hacer un commit antes de realizar cambios importantes:</strong> Antes de llevar a cabo modificaciones
+            significativas como agregar una nueva característica o realizar cambios arquitectónicos, asegúrate de hacer
+            un commit para tener un punto donde puedas restaurar tus cambios si es necesario y facilitar la revisión del
+            código.</p>
+
+        <p><strong>Realizar un commit antes de actualizar o sincronizar:</strong> Antes de llevar a cabo operaciones
+            como fusionar cambios desde otra rama o sincronizar tu rama con cambios remotos, asegúrate siempre de hacer
+            un commit previo para garantizar que tu historial quede limpio.</p>
+
+<div class="preguntas">
+    <h1>¿Cómo podríamos trabajar varias personas en el mismo proyecto?</h1>
+</div>
+<p><strong>Creamos un repositorio,</strong> e invitamos a las personas que queramos que esten en el.</p>
+<p><Strong>Importacia de ramas, </Strong> es recomendable que cada persona trabaje en su propia rama independiente del proyecto<strong>(main).</strong></p>
+<p><strong>Importante si un invitado / compañero a terminado su trabajo puede combinarla con la rama principal del proyecto</strong></p>
+<p><Strong>Evitar conflictos de fusión:</Strong> para poder evitarlos, todos los miembros del repositorio que suban sus trabajos a la rama principal,
+     no deben sobreescribir los cambios de otros trabajadores.</p>
+     <img class = "ramasdistintas" src="./img/fotodedistintasramasJotaro.png" alt="Sisoi">
+
+<div class="preguntas"><h1>Resolución de conflictos en un merge</h1></div>
+<div class="parte1">
+    <p>
+        Para ponernos en contexto, primero debemos saber que es un "merge".
+        Ya sabemos que en un proyecto suelen trabajar varias personas, y concretamente con git, cada persona suele trabajar en su propia rama,
+         pero varias personas pueden estar trabajando con un archivo en concrecto en sus respecticas ramas. Entonces... ¿qué pasa cuando queremos unir nuestras ramas?
+    </p>
+    <p>pues bien, el momento en el que fusionamos las ramas se llama "merge". Y si hay archivos que estan en diferentes ramas y modificados de diferente manera en la misma linea de códgio, 
+        ,al querer hacer una fusión o "merge"  va a acabar en una serie de conflictos ya que en la misma linea de código, habrán cosas diferentes.</p>
+        <p>a cotinuación vamos a mostrar los pasos para resolver estos conflictos:
+        </p>
+    <p>1. Nos metemos a la terminal Git</p>
+    <p>2. Nos dirigimos al repositorio, que esta dando el conflicto de fusión</p>
+    <p>3. En mi caso he creados dos Ramas una se llama StarPlatinum y la otra Dio</p>
+    <h4>StarPlatinum</h4>
+    <img src="./img/Creacionderama1.png" alt="Jotaro" height="150px">
+    <h4>Dio</h4>
+    <img src="./img/Creacionderama2.png" alt="Dio" height="150px">
+    <h4>Fase cuatro intentar que tengan conflicto con los Stands.</h4>
+    <img src="./img/meterloenblockparaconflicto.png" alt="Jotaro" height="200px">
+    <img src="./img/Dioparaelblock.png" alt="Dio" height="200px">
+    <h4>Ahora probaremos con el merge si Dio y Jotaro pueden convivir</h4>
+    <img src="./img/PeleaJotaroDio.png" alt="J+D" height="200px">
+    <h4>Abrimos el txt para ver que falla y vemos que Stand es</h4>
+    <img src="./img/BlockConflicto.png" alt="Conflicto">
+    <h4>Para arreglar este conflicto debemos, o borrar la linea de StarPlatinum, borrar la Dio o tambien que es lo que he hecho, combinar StarPlatinum con Dio. Quedara asi</h4>
+    <img src="./img/CombinaciondeStans.png" alt="J+D">
+    <h4>Actualizamos el archivo y hacemos un commit con un mensaje significativo. <3</h4>
+    <img src="./img/FinaldePelea.png" alt="Dio">
+    <h4>Asi hemos arreglado el conflicto del merge y ahora Jotaro no pelea con Dio porque Gano Dio</h4>
+
+
+    <div class="preguntas"><h1>Diferencias entre un pull y un fetch.</h1></div>
+        <p><strong>1. Debemos saber que tanto pull como fetch </Strong>se utilizan para actualizar la copia local de un repositorio remoto</p>
+            <h2>Tabla de pull y fetch</h2>
+            <table align="center">
+                <tr>
+                  <th style="border: 1px solid #ccc; padding: 5px;">Característica</th>
+                  <th style="border: 1px solid #ccc; padding: 5px;">git fetch</th>
+                  <th style="border: 1px solid #ccc; padding: 5px;">git pull</th>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Descarga cambios</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Sí</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Sí</td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Fusiona cambios</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">No</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Sí</td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Puede causar conflictos</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">No</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Sí</td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Uso recomendado</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Si desea ver los cambios remotos sin fusionarlos</td>
+                  <td style="border: 1px solid #ccc; padding: 5px;">Si desea fusionar los cambios remotos con su rama actual</td>
+                </tr>
+              </table>
+
+</div>
+</body>
+</html>
