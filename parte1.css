@@ -1,7 +1,20 @@
+a{
+    color: white;
+}
 .remoto{
     margin-left: 22px;
     top: -14px;
      
+  }
+  .tablaPaginas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .enlaces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body{
       background-image: url(./fondo.jpg);
@@ -15,7 +28,11 @@
       margin: auto;
   
   }
-  
+  img{
+    margin-left: 12px;
+    width:500px ;
+    height:auto;
+  }
   
   /*Tengo que volver a editar las fotos por que se ven fatal
   Daylto :)

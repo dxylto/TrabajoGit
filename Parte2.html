@@ -11,6 +11,21 @@
 </head>
 
 <body>
+    <div class="tablaPaginas">
+    <table border="2">
+        <tr>
+            <th><a href="./parte1.html" title="Parte1" target="_self">
+                PARTE 1.
+            </a></th>
+            <th><a href="./Index.html" title="Parte2" target="_self">
+                INDEX.
+            </a></th>
+            <th><a href="./parte3.html" title="Parte3" target="_self">
+                PARTE 3.
+            </a></th>
+        </tr>
+    </table>
+    </div>
     <div class="all">
         <div class="preguntas">
             <h2>Creación de ramas. Recuerda que en la rama master/main sólo debería existir la versión acabada del
@@ -32,7 +47,7 @@
         <p>Crearemos una segunda y añadiremos archivos</p>
         <div class="branch"><img src="./img/branch2.png"></div>
 
-        <div class="preguntas">Proceso de merge entre ramas</div>
+        <div class="preguntas"><h2>Proceso de merge entre ramas</h2></div>
         <p>Uniremos la rama dev a la rama main</p>
         <p>Antes usaremos el git checkout para ir a la rama main</p>
         <p>Ahora escribiremos git merge y el nombre de la rama que queremos traer</p>
@@ -42,7 +57,6 @@
         <p>Listo, ya tenemos actualizada la rama main</p>
         <p>Es igual para mergear cualquier otra rama, <br>
             en la rama main no debemos trabajar </p>
-        <div class="preguntas">
 
             <div class="preguntas">
                 <h2>Resolución de conflictos en un merge</h2>
@@ -121,6 +135,106 @@
                         </table>
 
             </div>
+            <div class="preguntas">
+                <h1>¿Cómo podríamos volver a una versión anterior del proyecto?</h1>
+                </div>
+                <p> 
+                    <p>Para esto, necesitariamos tener un archivo anteriormente creado y con al menos dos commits.</p>
+                    <img src="./img/VolverAtras.png" alt="Commit inicial">
+                    <img src="./img/GitHub.png" alt="Commits">
+                    <br>
+                    <p>Podemos recuperar el archivo (prueba.txt en los ejemplos siguientes) al estado en el que estaba antes de la modificación, es decir al estado en el que estaba en el último «commit» para eso utiliza el comando git checkout al último commit conocido que en este caso está en HEAD:
+                    <br>
+                    git checkout Prueba1(HEAD) Parte3 </p>
+                    <img src="./img/paso01.png" alt="Paso01">
+                    <br>
+                   <p>Pero si esa versión no es buena, o si quieres volver el archivo en cuestión no a esa versión si no a una anterior en el tiempo, primero deberemos comprobar en el registro log de ese directorio de git los «commits» realizados para poder escoger a la versión que deseamos. Echamos un vistazo a los logs con este comando:
+                   <br>
+                    git log --oneline </p>
+                    <img src="./img/Paso02.png" alt="Paso02">
+                    <br>
+                   <p>Lo que nos dará una salida «algo» similar a esta (con las lógicas diferencias de «commits», etc…)
+                   <br>
+                   4c8bde5 primer commit
+                   <br>
+                   59ff307 para volver a la anterior version
+                   <br>
+                   5ee9c18 segundo commit
+                   <br>
+                   6477aec Primer commit del proyecto. </p>
+                   <br>
+                   <p>Imaginemos que queremos devolver el archivo Parte3 a la versión como estaba en nuestro primer commit del proyecto. Para ello escribiremos el siguiente comando
+                   <br>
+                    git checkout 59ff307 Parte3 </p>
+                    <img src="./img/Paso03.png" alt="Paso03">
+                    <br>
+                   <p>Ahora la versión antigua del archivo ha sido restaurada en el directorio de trabajoadir el archivo y volver a hacer un «commit» ya que el archivó cambió.
+                   <br>
+                   <br>
+                   Puedes comprobar el estado del directorio de trabajo mediante el comando git status.
+                   <img src="./img/Status.png" alt="Git status"> 
+                   <br>
+                   No olvides que una vez restaurado el archivo, es necesario volver a añadir el archivo y volver a hacer un «commit» ya que el archivó cambió.
+                    git add Parte3
+                    <br>
+                    git commit -m "restaurar prueba.txt al estado del primer commit."" </p>
+                    <img src="./img/Pasos05.png" alt="Pasos05">
+                    <br>
+                   <p>Comprobemos en el log de Git que efectivamente todo ha ido como queríamos:
+                   <br>
+                   git log --oneline
+                   <br>
+                   <img src="./img/Paso06.png" alt="Paso06">
+                   <br>
+                   nos saldra algo así:
+                   <br>
+                   6536889 restaurar Parte3 al estado del primer commit.
+                   <br>
+                   4c8bde5 commit prueba
+                   <br>
+                   5ee9c18 segundo commit
+                   <br>
+                   6477aec Primer commit del proyecto. </p>
+                   <br>
+                   <p>También podemos llevar no sólo un archivo a un punto predeterminado, si no todos los archivos del repositorio, para ello escribimos:
+                   <br>
+                   git checkout 6477aec
+                   <img src="./img/PasoRapido.png" alt="Paso Rapido">
+                   <br>
+                   Al hacer esto, tu repositorio va atrás en el tiempo por completo, así que si ahora empiezas a trabajar sobre él podrías destruir tu futuro trabajo. Por defecto Git asume que no es eso lo que quieres hacer, así que separa donde se desarrolla el trabajo HEAD del proyecto y te deja empezar a trabajar.</p>
+                </p>
+                </div>
+                <br>
+            <div class="preguntas">
+                <h1>¿Podemos añadir seguridad de alguna forma a nuestro repositorio remoto?</h1>
+            </div>
+                <p>Si, hay varias maneras de proteger tu repositorio remoto y todo su contenido.</p>
+                <p><strong>1.Claves SSH:</strong> Si estás utilizando la autentización SSH, le puedes poner una contraseña a tu clave SSH.</p>
+                <img src="./img/SSH.png" alt="Clave SSH">
+                <br>
+                <p><strong>2.Autentificación de Dos Factotes(2FA):</strong> Se tiene que agregar desde donde tienes tu repositorio. Esto lo que hace es que una vez ingreses tu contraseña, te pide un segundo método de reconocimiento al ingresar a tu cuenta.</p>
+                <img src="./img/2FA.jpg" alt="Autentificación de Dos Factotes">
+                <img src="./img/Verificacion.webp" alt="2FA">
+                <br>
+                <p><strong>3.Permisos y colaboradores:</strong> Tienes que ajustar los permisos de tu repositorio para que solo las personas que quieras tengan permisos de escritura y lectura.</p>
+                <img src="./img/Permisos y colaboradores.png" alt="Permisos y colaboradores">
+                <br>
+                <p><strong>4.Auditoria y registros:</strong> Puedes revisar los registros de las actividades de cada usuario y así ver si a habido algun cambio raro.</p>
+                <img src="./img/RegistroDeActividad.png" alt="Registro De Actividad">
+                <br>
+                <p><strong>5.Analisis de dependencias:</strong> Una de las partes más importantes es mantener las bibliotecas actualizadas. También puedes hacer análisis de seguridad para ver posibles vulnerabilidades.</p>
+                <img src="./img/RegistroDeDependencias.webp" alt="Registro De Dependencias">
+                <img src="./img/SecurityRisk.png" alt="Security Risk">
+                <br>
+                <p><strong>6.Escaneo de código:</strong> Puedes utilizar el análisis de código estático para ver vulnerabilidades en la estructura del código.</p>
+                <img src="./img/EscaneoDeCodigo.webp" alt="EscaneoDeCodigo">
+                <br>
+                <p><strong>7.Politicas de contribución:</strong> Establece y comunica las políticas de contribución de tu proyecto. Esto garantiza que los colaboradores sigan estas políticas para mantener la integridad y seguridad del código.</p>
+                <img src="./img/PoliticasDeContribución.png" alt="Politicas de contribución">
+                <br>
+                <p><strong>8.Actualizaciones de seguridad:</strong> Mantenlo todo actualizado siempre que haya una actualización de seguridad de las herramientas y bibliotecas.</p>
+                <img src="./img/Actualizacion.webp" alt="Actualizaciones de seguridad">
+        
 </body>
 
 </html>
