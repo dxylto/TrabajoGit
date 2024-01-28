@@ -15,7 +15,7 @@ body{
     background-position: center;
     color: white;
     background-attachment: fixed;
-   text-align: center;
+    text-align: center;
 
 }
 .gitc{
@@ -51,15 +51,42 @@ body{
 Daylto :)
 */
 .local{
+    margin-top: 15px;
+    margin-left: 12px;
     width:500px ;
     height:auto;
 }
 .remoto{
+    margin-top: 15px;
+    margin-left: 12px;
     width:500px ;
     height:auto;
 }
 .RepositorioRemoto{
     width:400px ;
     height:auto;
+}
+.IntentoCommit{
+    width:500px ;
+    height:auto;
+}
+.main{
+    width:500px ;
+    height:auto;
+}
+.branch{
+    width:500px ;
+    height:auto;
+}
+.merge{
+    width:500px ;
+    height:auto;
+}
+.log{
+    width:500px ;
+    height:auto;
+}
+div{
+    
 }
 /*Es hasta aqui*/

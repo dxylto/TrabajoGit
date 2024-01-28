@@ -1,8 +1,9 @@
 ## INTEGRANTES: 
 
-	-Nico Bodnar Yuzyfishyn
-	-Hector Fernandez
-	-Saul Lázaro
-	-Daylto Bravo
+
+	1. Nico Bodnar Yuzyfishyn
+	2. Hector Fernandez
+	3. Saul Lázaro
+	4. Daylto Bravo
 
 
