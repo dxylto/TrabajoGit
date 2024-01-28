@@ -7,11 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="parte1.css" />
     <link rel="icon" href="./img/picotre.jpg" type="image/x-icon" />
-    <title>Kotoganai</title>
+    <title>Parte2</title>
 </head>
 
 <body>
     <div class="all">
+        <div class="preguntas">Creación de ramas. Recuerda que en la rama master/main sólo debería existir la versión acabada del producto.</div>
+        <p>No podemos crear una nueva rama partida de la main sin tener ningún commit, 
+            <br>aun así vamos a intentarlo para ver que pasa, vamos a crear un archivo readme.md pero no vamos a 
+            <br>hacer no vamos a comitearlo y vamos a intentar hacer una rama para ver que nos sale</p>
+            <div class="IntentoCommit"><img src="./img/Cap_intento_commit.png"></div>
+            <p>Como vemos nos sale que no es valido y cuando hacemos un branch para ver las ramas que tenemos nos sale vacío 
+                <br>esto es debido a que la rama main se crea después de hacer el primer commit</p>
+            <div class="main"><img src="./img/main1.png"></div>
+            <p>Aquí podemos ver que ahora si esta la rama main</p><br>
+            <p>Ahora crearemos una nueva rama para trabajar en ella</p>
+            <p>-git branch "nombre"</p>
+            <div class="branch"><img src="./img/branch_prueba.png"></div>
+            <p>Crearemos una segunda y añadiremos archivos</p>
+            <div class="branch"><img src="./img/branch2.png"></div>
+
+        <div class="preguntas">Proceso de merge entre ramas</div>
+        <p>Uniremos la rama dev a la rama main</p>
+        <p>Antes usaremos el git checkout para ir a la rama main</p>
+        <p>Ahora escribiremos git merge y el nombre de la rama que queremos traer</p>
+        <div class="merge"><img src="./img/Despuess_merge.png"></div>
+        <p>Si hacemos un git log podremos ver que comparten los commits</p>
+        <div class="log"><img src="./img/logDespues_merge.png"></div>    
+        <p>Listo, ya tenemos actualizada la rama main</p>
+        <p>Es igual para mergear cualquier otra rama, <br>
+            en la rama main no debemos trabajar </p>   
         <div class="preguntas">
             <h1>¿Cada cuánto hay que realizar un commit?</h1>
         </div>

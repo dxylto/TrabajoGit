@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parte 1</title>
- <link rel="stylesheet" href="parte1.css">
+  <link rel="stylesheet" href="parte1.css">
   <link rel="icon" href="uwu.jpg">
 </head>
 
@@ -15,45 +15,56 @@
     <div class="preguntas">¿Cómo podemos crear un repositorio remoto?</div>
     <div class="parte1">
       FORMA 1.
-      <p>Primero deberemos tener un repositorio local, para más tarde añadir la 	dirección del repositorio remoto.</p><br>
+      <p>Primero deberemos tener un repositorio local, para más tarde añadir la dirección del repositorio remoto.</p>
+      <br>
       1.Creación de un repositorio local:
       <p>- git init “nombre”</p><br>
-      <p>-nos meteremos dentro del repositorio y crearemos el archivo que 
-          veamos necesario </p>
+      <p>-nos meteremos dentro del repositorio y crearemos el archivo que
+        veamos necesario </p>
       <p>-Escribiremos git status</p>
       <p>-git add (Para añadir los archivos correspondientes)</p>
       <p>* si escribimos ’.’ nos añadirá todo lo que este desactualizado</p>
       <p>-git commit -m “Nombre que deseemos”</p>
-      <p>*si no te ha dejado hacer un commit es porque es la primera vez que lo haces te saldran unas instrucciones para que añadas tu correo y tu nombre, una vez lo haga ya podrá hacer un git commit</p>
-      <div><img class="local" src="./repositorio_local.jpeg"></div>
-      
+      <p>*si no te ha dejado hacer un commit es porque es la primera vez que lo haces te saldran unas instrucciones para
+        que añadas tu correo y tu nombre, una vez lo haga ya podrá hacer un git commit</p>
+      <div><img class="local" src="./img/primerCommit.jpeg"></div>
+
       2.Creación de un repositorio remoto:
       <p>Deberemos crear el repositorio en alguna página como github</p>
       <p>*Las imágenes y la explicación sera desde github</p>
-      <p>-Ahora volveremos al repositorio local para subirlo al remoto</p>
-      <div><img class="remoto" src="./RepositorioRemoto.jpeg"></div>
-      <p>-git remote add orgin "url"</p>
-      <p>-git push -u</p>
-      <div><img class="remoto" src="./remoto.jpeg"></div>
-  </div>
-  <div class="parte2">    
+      <p>-Entraremos a github e iremos a home</p>
+      <p>-Pulsaremos en new repositorio</p>
+      <div><img class="remoto" src="./img/CrearRepoRemoto .png"></div>
+      <p>-Lo pondremos en privado o en público</p>
+      <p>-Más tarde nos saldran los comandos que hay que introducir en la terminal</p>
+      <p>-Abriremos la terminal, iremos al repositorio local y seguiremos las indicaciones</p>
+      <div><img class="remoto" src="./img/indicaciones.jpeg"></div>
+    </div>
+    <div class="parte2">
       FORMA 2.
       <p>Esta vez lo primero que vamos a realizar va a ser la el repositorio remoto</p>
-      <p>Para ello deberemos de dirigirnos a github y seguir los mismo pasos de <br>creación de un repositorio remoto explicados anteriormente:</p>
+      <p>Para ello deberemos de dirigirnos a github y seguir los mismo pasos de <br>creación de un repositorio remoto
+        explicados anteriormente:</p>
       <p>-Cuando hayamos acabado de crearlo copiaremos la url</p>
       <p>-Abriremos la terminal e iremos a donde queremos que esté nuestro repositorio</p>
       <p>-Escribiremos git clone "url"</p>
-  </div>
-  <div class="preguntas">¿Qué es el README.md?</div>
-  <p>Los archivos readme.md son archivos con información importante del proyecto,<br> suelen aclarar preguntas sobre la instalación, actualización o utilización de un software que le sirve al usuario final</p>
-  <br>
-  <p>También sirve de guía para la ejecución del proyecto o por si un proyecto se queda en pausa a la hora de retomarlo sirve de guía</p><br>
-  <p>Para otros desarrolladores explican el código y proporcionan información importante sobre su desarrollo posterior o sobre cómo utilizar un sistema, un software o proyectos de código abierto</p>
+    </div>
+    <div class="preguntas">¿Qué es el README.md?</div>
+    <p>Los archivos readme.md son archivos con información importante del proyecto,
+      <br> suelen aclarar preguntas sobre la instalación, actualización o utilización de un software que le sirve al
+      usuario final
+    </p>
+    <p>También sirve de guía para la ejecución del proyecto o por si un proyecto se queda en pausa a la hora de
+      retomarlo sirve de guía</p>
+    <p>Para otros desarrolladores explican el código y proporcionan información importante
+      <br>sobre su desarrollo posterior o sobre cómo utilizar un sistema, un software o proyectos de código abierto
+    </p>
 
-  <div class="preguntas">¿Qué es Markdown?</div>
-  <p>Es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz, <br>que la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida
-  </p>
-
+    <div class="preguntas">¿Qué es Markdown?</div>
+    <p>Es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz, <br>que la máxima legibilidad y facilidad
+      de publicación tanto en su forma de entrada como de salida
+    </p>
+    <!---------------------------------------PARTE NICO----------------------------------------------------->
     <div class="preguntas">¿Qué son y que utilidad tienen las licencias?</div>
 
     <p>Las licencias son una autorización que entrega un autor o una entidad a terceros para utilizar su producto,
@@ -83,21 +94,28 @@
       3º. Ir al repositorio remoto y copiar el url de la barra de direcciones.<br>
       4º. Volver a la consola y pegar el url y presionar la tecla "enter".<br>
       5º. Ya deberias tener el repositorio remoto completo integrado en tu repositorio local.
-      <div><img class="gitc" src="./Captura.PNG" /> </div>
+      <div><img class="gitc" src="./img/Captura.PNG" /> </div>
     </div>
 
     <p>2. -> la segunda forma de integrar un repo remoto a un repo local es a traves del comando "git init".<br>
-    Como recomendación lo que hay que hacer es crear una carpeta con el nombre de lo que quieres hacer, acto seguido abres la carpeta y sigues los siguientes pasos:   </p>
+      Como recomendación lo que hay que hacer es crear una carpeta con el nombre de lo que quieres hacer, acto seguido
+      abres la carpeta y sigues los siguientes pasos: </p>
     <div class="remoto">
       <p> 1º. Abrir la consola como ya hemos hecho anteriormente en el primer paso </p>
-      <p> 2º. En la consola escribir " git init (este comando lo que hace es crear un repositorio local)" como curiosidad, nos crea una carpeta oculta llamada ".git". </p>
-      <div><img class="giti" src="./Captura oculto.PNG"/> </div>
-      <p> 3º. Crear una rama local con el comando " git checkout -b "nombre de la rama"(con este comando lo que hacemos es salirnos de la rama main si estamos en ella y nos mete en la rama la cual hemos especificado. Si no existe dicha rama, el comando la crea) " es recomendable copiar el nombre de la rama del repo remoto. </p>
-      <div><img class="remname" src="./name.png"/> </div>
-      <p>4º. Lo que debemos hacer ahora es conectar el repo remoto con el repo local. Para eso vamos al repo remoto y entramos a la rama en al cual queremos trabajar y le damos a "Code" y copiamos el URL </p>
-      <div><img class="urlimg" src="./URL.PNG"/></div>
-      <p>5º. una vez copiado el URL de la rama volvemos a 'gitBush' y escribimos el comando "git remote add origin " y pegamos el URL que hemos copiado. Cabe destacar que podemos cambiar origin por cualquier nombre que nosotros queramos pero es recomendable dejarlo en origin. </p>
-      <div> <img class="gitadd" src="./addorigin.PNG"/> </div>
+      <p> 2º. En la consola escribir " git init (este comando lo que hace es crear un repositorio local)" como
+        curiosidad, nos crea una carpeta oculta llamada ".git". </p>
+      <div><img class="giti" src="./img/Captura oculto.PNG" /> </div>
+      <p> 3º. Crear una rama local con el comando " git checkout -b "nombre de la rama"(con este comando lo que hacemos
+        es salirnos de la rama main si estamos en ella y nos mete en la rama la cual hemos especificado. Si no existe
+        dicha rama, el comando la crea) " es recomendable copiar el nombre de la rama del repo remoto. </p>
+      <div><img class="remname" src="./img/name.png" /> </div>
+      <p>4º. Lo que debemos hacer ahora es conectar el repo remoto con el repo local. Para eso vamos al repo remoto y
+        entramos a la rama en al cual queremos trabajar y le damos a "Code" y copiamos el URL </p>
+      <div><img class="urlimg" src="./img/URL.PNG" /></div>
+      <p>5º. una vez copiado el URL de la rama volvemos a 'gitBush' y escribimos el comando "git remote add origin " y
+        pegamos el URL que hemos copiado. Cabe destacar que podemos cambiar origin por cualquier nombre que nosotros
+        queramos pero es recomendable dejarlo en origin. </p>
+      <div> <img class="gitadd" src="./img/addorigin.PNG" /> </div>
 
     </div>
     </p>
@@ -112,4 +130,5 @@
     <p>7º-> Considerar usar utilidades para hacer commit.</p>
   </div>
 </body>
+
 </html>

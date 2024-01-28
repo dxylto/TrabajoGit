@@ -10,14 +10,14 @@
   top: -14px;
    
 }
-/*body{
+body{
     background-image: url(./fondo.png);
     background-position: center;
     color: white;
     background-attachment: fixed;
-   
+   text-align: center;
 
-}*/
+}
 .gitc{
     margin-top: 15px;
     margin-left: 12px;
