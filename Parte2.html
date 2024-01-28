@@ -37,56 +37,7 @@
         <p>Listo, ya tenemos actualizada la rama main</p>
         <p>Es igual para mergear cualquier otra rama, <br>
             en la rama main no debemos trabajar </p>   
-        <div class="preguntas">
-            <h1>¿Cada cuánto hay que realizar un commit?</h1>
-        </div>
-        <p>Primero debemos saber, que hay que hacer y para que hacer un commit</p>
-        <!--Explicacion de commit antes de responder pregunta-->
-        <ul>
-            <li>
-                <strong>Etapa de Stage:</strong>
-                <p>Tus cambios deben estar en la etapa de "Stage" antes de realizar un commit.</p>
-            </li>
-            <li>
-                <strong>Mensaje Descriptivo:</strong>
-                <p>Cada commit debe tener un mensaje descriptivo que explique brevemente los cambios realizados.</p>
-            </li>
-            <li>
-                <strong>Añadir Valor:</strong>
-                <p>Hacer un commit debe representar la adición de valor al proyecto. Asegúrate de que los cambios sean
-                    significativos y bien documentados.</p>
-            </li>
-        </ul>
-        <h2>Cuando hay que hacerlo</h2>
-<!--Como debemos o con que frencuencia debemos hacer commits explicacion-->
-        <p><strong>Realizar cambios pequeños y lógicos en los commits:</strong>
-            Asegúrate de hacer commits con modificaciones de tamaño reducido y coherentes para facilitar el seguimiento,
-            identificar problemas y mantener un historial claro.</p>
-
-        <p><strong>Hacer commits cambios específicos:</strong> Es importante que cada commit aborde una única funcionalidad,
-            corrección de error o mejora, representando así una unidad indivisible y completa de cambio.</p>
-
-        <p><strong>Mantener una frecuencia regular en los commits:</strong> Realiza commits con regularidad para
-            mantener un historial claro y facilitar la colaboración en equipos.</p>
-
-        <p><strong>Hacer un commit antes de realizar cambios importantes:</strong> Antes de llevar a cabo modificaciones
-            significativas como agregar una nueva característica o realizar cambios arquitectónicos, asegúrate de hacer
-            un commit para tener un punto donde puedas restaurar tus cambios si es necesario y facilitar la revisión del
-            código.</p>
-
-        <p><strong>Realizar un commit antes de actualizar o sincronizar:</strong> Antes de llevar a cabo operaciones
-            como fusionar cambios desde otra rama o sincronizar tu rama con cambios remotos, asegúrate siempre de hacer
-            un commit previo para garantizar que tu historial quede limpio.</p>
-
-<div class="preguntas">
-    <h1>¿Cómo podríamos trabajar varias personas en el mismo proyecto?</h1>
-</div>
-<p><strong>Creamos un repositorio,</strong> e invitamos a las personas que queramos que esten en el.</p>
-<p><Strong>Importacia de ramas, </Strong> es recomendable que cada persona trabaje en su propia rama independiente del proyecto<strong>(main).</strong></p>
-<p><strong>Importante si un invitado / compañero a terminado su trabajo puede combinarla con la rama principal del proyecto</strong></p>
-<p><Strong>Evitar conflictos de fusión:</Strong> para poder evitarlos, todos los miembros del repositorio que suban sus trabajos a la rama principal,
-     no deben sobreescribir los cambios de otros trabajadores.</p>
-     <img class = "ramasdistintas" src="./img/fotodedistintasramasJotaro.png" alt="Sisoi">
+        
 
 <div class="preguntas"><h1>Resolución de conflictos en un merge</h1></div>
 <div class="parte1">
@@ -150,6 +101,106 @@
                   <td style="border: 1px solid #ccc; padding: 5px;">Si desea fusionar los cambios remotos con su rama actual</td>
                 </tr>
               </table>
+    
+              <div class="preguntas">
+                <h1>¿Cómo podríamos volver a una versión anterior del proyecto?</h1>
+                </div>
+                <p> 
+                    <p>Para esto, necesitariamos tener un archivo anteriormente creado y con al menos dos commits.</p>
+                    <img src="./img/VolverAtras.png" alt="Commit inicial">
+                    <img src="./img/GitHub.png" alt="Commits">
+                    <br>
+                    <p>Podemos recuperar el archivo (prueba.txt en los ejemplos siguientes) al estado en el que estaba antes de la modificación, es decir al estado en el que estaba en el último «commit» para eso utiliza el comando git checkout al último commit conocido que en este caso está en HEAD:
+                    <br>
+                    git checkout Prueba1(HEAD) Parte3 </p>
+                    <img src="./img/paso01.png" alt="Paso01">
+                    <br>
+                   <p>Pero si esa versión no es buena, o si quieres volver el archivo en cuestión no a esa versión si no a una anterior en el tiempo, primero deberemos comprobar en el registro log de ese directorio de git los «commits» realizados para poder escoger a la versión que deseamos. Echamos un vistazo a los logs con este comando:
+                   <br>
+                    git log --oneline </p>
+                    <img src="./img/Paso02.png" alt="Paso02">
+                    <br>
+                   <p>Lo que nos dará una salida «algo» similar a esta (con las lógicas diferencias de «commits», etc…)
+                   <br>
+                   4c8bde5 primer commit
+                   <br>
+                   59ff307 para volver a la anterior version
+                   <br>
+                   5ee9c18 segundo commit
+                   <br>
+                   6477aec Primer commit del proyecto. </p>
+                   <br>
+                   <p>Imaginemos que queremos devolver el archivo Parte3 a la versión como estaba en nuestro primer commit del proyecto. Para ello escribiremos el siguiente comando
+                   <br>
+                    git checkout 59ff307 Parte3 </p>
+                    <img src="./img/Paso03.png" alt="Paso03">
+                    <br>
+                   <p>Ahora la versión antigua del archivo ha sido restaurada en el directorio de trabajoadir el archivo y volver a hacer un «commit» ya que el archivó cambió.
+                   <br>
+                   <br>
+                   Puedes comprobar el estado del directorio de trabajo mediante el comando git status.
+                   <img src="./img/Status.png" alt="Git status"> 
+                   <br>
+                   No olvides que una vez restaurado el archivo, es necesario volver a añadir el archivo y volver a hacer un «commit» ya que el archivó cambió.
+                    git add Parte3
+                    <br>
+                    git commit -m "restaurar prueba.txt al estado del primer commit."" </p>
+                    <img src="./img/Pasos05.png" alt="Pasos05">
+                    <br>
+                   <p>Comprobemos en el log de Git que efectivamente todo ha ido como queríamos:
+                   <br>
+                   git log --oneline
+                   <br>
+                   <img src="./img/Paso06.png" alt="Paso06">
+                   <br>
+                   nos saldra algo así:
+                   <br>
+                   6536889 restaurar Parte3 al estado del primer commit.
+                   <br>
+                   4c8bde5 commit prueba
+                   <br>
+                   5ee9c18 segundo commit
+                   <br>
+                   6477aec Primer commit del proyecto. </p>
+                   <br>
+                   <p>También podemos llevar no sólo un archivo a un punto predeterminado, si no todos los archivos del repositorio, para ello escribimos:
+                   <br>
+                   git checkout 6477aec
+                   <img src="./img/PasoRapido.png" alt="Paso Rapido">
+                   <br>
+                   Al hacer esto, tu repositorio va atrás en el tiempo por completo, así que si ahora empiezas a trabajar sobre él podrías destruir tu futuro trabajo. Por defecto Git asume que no es eso lo que quieres hacer, así que separa donde se desarrolla el trabajo HEAD del proyecto y te deja empezar a trabajar.</p>
+                </p>
+                </div>
+                <br>
+            <div class="preguntas">
+                <h1>¿Podemos añadir seguridad de alguna forma a nuestro repositorio remoto?</h1>
+            </div>
+                <p>Si, hay varias maneras de proteger tu repositorio remoto y todo su contenido.</p>
+                <p><strong>1.Claves SSH:</strong> Si estás utilizando la autentización SSH, le puedes poner una contraseña a tu clave SSH.</p>
+                <img src="./img/SSH.png" alt="Clave SSH">
+                <br>
+                <p><strong>2.Autentificación de Dos Factotes(2FA):</strong> Se tiene que agregar desde donde tienes tu repositorio. Esto lo que hace es que una vez ingreses tu contraseña, te pide un segundo método de reconocimiento al ingresar a tu cuenta.</p>
+                <img src="./img/2FA.jpg" alt="Autentificación de Dos Factotes">
+                <img src="./img/Verificacion.webp" alt="2FA">
+                <br>
+                <p><strong>3.Permisos y colaboradores:</strong> Tienes que ajustar los permisos de tu repositorio para que solo las personas que quieras tengan permisos de escritura y lectura.</p>
+                <img src="./img/Permisos y colaboradores.png" alt="Permisos y colaboradores">
+                <br>
+                <p><strong>4.Auditoria y registros:</strong> Puedes revisar los registros de las actividades de cada usuario y así ver si a habido algun cambio raro.</p>
+                <img src="./img/RegistroDeActividad.png" alt="Registro De Actividad">
+                <br>
+                <p><strong>5.Analisis de dependencias:</strong> Una de las partes más importantes es mantener las bibliotecas actualizadas. También puedes hacer análisis de seguridad para ver posibles vulnerabilidades.</p>
+                <img src="./img/RegistroDeDependencias.webp" alt="Registro De Dependencias">
+                <img src="./img/SecurityRisk.png" alt="Security Risk">
+                <br>
+                <p><strong>6.Escaneo de código:</strong> Puedes utilizar el análisis de código estático para ver vulnerabilidades en la estructura del código.</p>
+                <img src="./img/EscaneoDeCodigo.webp" alt="EscaneoDeCodigo">
+                <br>
+                <p><strong>7.Politicas de contribución:</strong> Establece y comunica las políticas de contribución de tu proyecto. Esto garantiza que los colaboradores sigan estas políticas para mantener la integridad y seguridad del código.</p>
+                <img src="./img/PoliticasDeContribución.png" alt="Politicas de contribución">
+                <br>
+                <p><strong>8.Actualizaciones de seguridad:</strong> Manten lo todo actualizado siempre que haya una actualización de seguridad de las herramientas y bibliotecas.</p>
+                <img src="./img/Actualizacion.webp" alt="Actualizaciones de seguridad">
 
 </div>
 </body>
